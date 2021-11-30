@@ -7,11 +7,11 @@
  * @type {Peer}
  */
  const peer = new Peer(''+Math.floor(Math.random()*2**18).toString(36).padStart(4,0), {
-    host: `${location.hostname}`,
+    host: 'phonecall-pixellab-poc.herokuapp.com',
     debug: 1,
     path: '/myapp',
     key: 'peerjs',
-    port: 8000
+    port: 443
 });
 
 window.peer = peer;
